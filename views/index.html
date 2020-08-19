@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+</head>
+<body>
+    <h1>评论列表</h1>
+    <button><a style="display: block; width: 100%; height: 100%;" href="/post">发表评论</a> </button>
+    {{each comments}}
+    <ul>
+        <li>{{$value.name}}：{{$value.say}}    时间：{{$value.datetime}}</li>
+    </ul>
+    {{/each}}
+</body>
+</html>
